@@ -2,10 +2,7 @@
 
 def stock_picker(prices)
 
-	biggest_profit = 0
-	buy = 0
-	sell = 0
-
+	biggest_profit, buy, sell = 0, 0, 0
 	new_prices = prices.dup
 	prices.each do |x|
 		new_prices.each do |y|
