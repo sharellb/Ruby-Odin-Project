@@ -47,11 +47,11 @@ class MasterMind
 		if @guess.length != 4
 			puts "You didn't put in four pegs. Try again!" 
 			player_guess
-		end
-		@guess.each do |x|
-			if !COLORS.include? x
-				puts "#{x} is not a valid color. Try again!" 
-				player_guess
+		elsif @guess.each do |x|
+				if !COLORS.include? x
+					puts "#{x} is not a valid color. Try again!" 
+					player_guess
+				end
 			end
 		end
 		@turns += 1 
