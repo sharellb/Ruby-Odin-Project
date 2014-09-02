@@ -73,7 +73,7 @@ class MasterMind
 	end
 
 	def end_game
-		if @turns == 3
+		if @turns == 12
 			puts "Sorry you're all out of turns."
 			puts "The order was #{@pegs}"
 			@game_over = true
